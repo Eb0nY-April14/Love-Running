@@ -65,6 +65,11 @@ within the image and also scales up the image size  */
     height: 600px;
     width: 100%;
     overflow: hidden;   /* this hides the size increase */
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: #fff;
 }
 
 /* Hero image styling */
@@ -84,8 +89,6 @@ within the image and also scales up the image size  */
     animation-fill-mode: forwards;  /* this retains the state of the animation at the last keyframe which is 110%. the effect of this is that the image zooms in & remains there at that size */  
 }
 
-
-
 /* creates the level of zoom for hero image. animation is defined using the @keyframes rule followed by an animation name of your choice */
 @keyframes hero-zoom {
     from {
@@ -93,7 +96,25 @@ within the image and also scales up the image size  */
     }
     to {
         transform: scale(1.1);   
-    }
-
-    
+    }   
 }
+
+#cover-text {
+    font-size: 130%;
+    font-family: Robot, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 300px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(241, 109,107, .7);
+
+    /* Text overlay (text on the image) styling */
+    bottom: 30px;   /* 30px above the bottom of the hero image */
+    right: 150px;   /* 150px in from the right of the image container */
+    position: absolute; /* This fix the text overlay in place */
+}
+
+
+
