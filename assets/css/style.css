@@ -57,3 +57,43 @@ h1, h2 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* This creates a zooming animation effect on the background image */
+/* This clears the image below the header so that the header text is not 
+within the image and also scales up the image size  */
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;   /* this hides the size increase */
+}
+
+/* Hero image styling */
+/* no-repeat prevents the image from being repeated if smaller than the screen */
+/* "center center" value is used to set the image horizontally & vertically */
+/* The background property is used if the image is purely for decorative purpose.
+ If not, then use the <img> tag */
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp') no-repeat center center;
+
+    /* animates zoom effect on loading page. CSS animation is based on transitions & transformations */
+    /* Transformations change the state of one or more elements & transitions are responsible for the smoothness of that change */
+    animation-name: hero-zoom;  /* this must match the @keyframes name */
+    animation-duration: 5s; /* Takes 5secs to scale the image up by 10% */
+    animation-fill-mode: forwards;  /* this retains the state of the animation at the last keyframe which is 110%. the effect of this is that the image zooms in & remains there at that size */  
+}
+
+
+
+/* creates the level of zoom for hero image. animation is defined using the @keyframes rule followed by an animation name of your choice */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);   
+    }
+
+    
+}
