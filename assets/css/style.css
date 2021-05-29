@@ -126,20 +126,56 @@ within the image and also scales up the image size  */
     padding-top: 30px;
     width: 33%;
     float: left;
-    background-color: blue; /* Use contrasting colours with the 3 divs to enable you keep track of them as you proceed */
+    background-color: white; /* Use contrasting colours before with the 3 divs to enable you keep track of them as you proceed */
 }
 
 #right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
-    background-color: silver;
+    background-color: white;
 }
 
 #center-about {
     width: 33%;
     margin: 0 auto; /*This is used to center the middle div properly since there is no 'float:center' property/value */
     background-color: green;
+}
+
+/* This styles the hr to fit below the heading by setting its border. Borders can be applied to most 
+elements that live inside the body element */
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;  /* This provides some clearance around the hr rule */
+}
+
+/* This styles the left-about-heading class */
+.left-about-heading {
+    width: 60%;
+    float: right;   /*This will make the content align with the photo in the middle */
+    line-height: 20px;
+    clear: both;   /* This ensures that each content block is aligned vertically */
+    margin-bottom: 50px;    /* This creates some breathing space between the divs on why love running with us section */
+}
+
+/* This styles the right-about-heading class */
+.right-about-heading {
+    width: 60%;
+    float: left;   /*This will make the content align with the photo in the middle */
+    line-height: 20px;
+    clear: both;   /* This ensures that each content block is aligned vertically */
+    margin-bottom: 50px;    /* This creates some breathing space between the divs on why love running with us section */
+}
+
+/* This aligns the right heading h2 so the icons on the left & right hand sides are aligned towards the center image */ 
+.right-about-heading h2 {
+    text-align: right;
+}
+
+/* This makes the content for both the right & left hand side give the impression of a curve around the cener image */
+.right-about-heading p {
+    text-align: right;
 }
 
 
