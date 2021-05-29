@@ -216,6 +216,25 @@ Ensure your chosen image is within 300 x 300px to make it easier with positionin
     overflow: hidden;   /*This hides any potential overflow */
 }
 
+/*This targets the div descendants of 'times' section & all the panels within that section will be
+affected by the styling applied here */
+#times div {
+    color: #fafafa;
+    background-color: rgba(0,0,0,0.6);
+    width: 20%; /*This width is too large it made one of the panels to fall to the next line so we used box-sizing property below to make it all fit into one line */
+    height: 300px;
+    float: left;    /*This will make the panels display horizontally within the flow of the page */
+    padding: 30px 0 0 10px;
+    text-align: center; /*This centers our texts for spatial balance within the panels */ 
+    border: 2px solid white;    /*This creates a white border around each div so the bg-image appears broken up into 5 sections */
+    box-sizing: border-box; /*Since the total width of 5 panels is already 100% so adding border around them increases the width so we get around this by using the box-sizing property. this tells the browser to include the border width in the total size of this element */ 
+}
+
+/*This sets the colour for h2 headings that are children of 'times' section */
+#times h2 {
+    color: #fafafa;
+}
+
 
 
 
