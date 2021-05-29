@@ -139,7 +139,7 @@ within the image and also scales up the image size  */
 #center-about {
     width: 33%;
     margin: 0 auto; /*This is used to center the middle div properly since there is no 'float:center' property/value */
-    background-color: green;
+    background-color: white;
 }
 
 /* This styles the hr to fit below the heading by setting its border. Borders can be applied to most 
@@ -150,7 +150,7 @@ hr {
     margin: 5px 0;  /* This provides some clearance around the hr rule */
 }
 
-/* This styles the left-about-heading class */
+/* This styles the left-about-heading class within its Parent container called left-about */
 .left-about-heading {
     width: 60%;
     float: right;   /*This will make the content align with the photo in the middle */
@@ -159,7 +159,7 @@ hr {
     margin-bottom: 50px;    /* This creates some breathing space between the divs on why love running with us section */
 }
 
-/* This styles the right-about-heading class */
+/* This styles the right-about-heading class within its Parent container called right-about */
 .right-about-heading {
     width: 60%;
     float: left;   /*This will make the content align with the photo in the middle */
@@ -176,6 +176,34 @@ hr {
 /* This makes the content for both the right & left hand side give the impression of a curve around the cener image */
 .right-about-heading p {
     text-align: right;
+}
+
+/*This styles the 'Why love Running with us' section by giving it an id of 'welcome' */
+#welcome {
+    text-align: center;
+    margin: 20px 0; /*This pushes the heading 20px down from the hero image */
+    font-size: 280%;
+}
+
+/*This is the Parent div for the 'circle-cover-bg' id & the following styles are applied to it */
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color:#ccc;
+    border-width: 1px;
+    border-radius: 50%; /*This is the trick used to create a circle but will only work for containers with equal width & height dimensions */
+    margin: 0 auto; /*This centers the circle within its Parent container called center-about */
+}
+
+/* This styles the round image. The 'center center' value will center the image horizontally & vertically
+while 'no-repeat' will prevent the repeat of the image.
+Ensure your chosen image is within 300 x 300px to make it easier with positioning of the image to the center */ 
+#circle-cover-bg {
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
+    height: 100%;   /* This is set to 100% of the Parent div. Remember to give the image a height or else it won't show up */
+    border-radius: 50%;
 }
 
 

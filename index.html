@@ -30,26 +30,26 @@
         </div>
     </section>
     <section id="club-ethos">
-        <h1>Why Love Running With Us?</h1>
-        <div id="left-about">
+        <h2 id="welcome">Why Love Running With Us?</h2>
+        <div id="left-about"> <!--This is the Parent container for left-about-heading class -->
             <!-- For the left upper part -->
-            <div class="left-about-heading">
+            <div class="left-about-heading">    <!--This is child 1 of Parent called left-about -->
                 <h2>Feel Healthy</h2>
                 <hr>    <!-- horizontal rule -->
                 <p>Since it improves aerobic fitness, running is a great way to help improve your
                  cardiovascular health. Plus, it burns calories and can build strength.</p>
             </div>
             <!-- For the left lower part -->
-            <div class="left-about-heading">
+            <div class="left-about-heading">    <!--This is child 2 of Parent called left-about -->
                 <h2>Feel Free</h2>
                 <hr>
                 <p>Physical exercise, running included, is known to release endorphins in the brain.
                  Endorphins make you more energetic, more awake and, yes, happier.</p>
             </div>
         </div>
-        <div id="right-about">
+        <div id="right-about">  <!--This is the Parent container for right-about-heading class -->
             <!-- For the right upper part -->
-            <div class="right-about-heading">
+            <div class="right-about-heading">   <!--This is child 1 of Parent called right-about -->
                 <h2>Get Social</h2>
                 <hr>
                 <p>
@@ -57,7 +57,7 @@
                 </p>
             </div>
             <!-- For the right lower part -->
-            <div class="right-about-heading">
+            <div class="right-about-heading">   <!--This is child 2 of Parent called right-about -->
                 <h2>Feel Strong</h2>
                 <hr>
                 <p>
@@ -65,7 +65,13 @@
                 </p>
             </div>
         </div>
-        <div id="center-about">Center</div>
+        <div id="center-about">
+            <div id="circle-container"> <!--This will be styled in css section to create the circular border around the image in the center -->
+                <div id="circle-cover-bg">  <!-- This will contain the image. bg is short for background -->
+                   <!-- <img src="" alt="center image"> -->
+                </div>
+            </div>
+        </div>
     </section>
     <section>Running locations, distances and times</section>
     <footer>Social links here</footer>
