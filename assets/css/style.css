@@ -206,6 +206,16 @@ Ensure your chosen image is within 300 x 300px to make it easier with positionin
     border-radius: 50%;
 }
 
+/* event times styling */
+#times {
+    background: url('../images/times-background.webp');
+    background-repeat: no-repeat;
+    background-size: cover; /*This will make the image fill the allocated section dimensions */
+    background-position: center;
+    width: 100%;
+    overflow: hidden;   /*This hides any potential overflow */
+}
+
 
 
 
