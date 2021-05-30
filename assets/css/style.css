@@ -297,6 +297,15 @@ for the club ethos elements get distorted and visually compromised */
         padding: 0; /*Clears out any padding set at the desktop-level */
     }
 
+    /* This applies mobile styles to meeting times. A single style rule is applied for both mobile & tablet sizes */
+    /* It targets the 'times' section & in particular, each 'times' child div */
+    #times > div {
+        width: 100%;    /*This changes the width from initial 20% to 100% */
+        clear: both;    /*This stacks the 'times' vertically */
+        height: 150px;  /*This sets the height to 150px to maintain the sizing ratios of the main structural page elements */
+        padding: 0; /*This clears out any unwanted desktop-level padding */
+    }
+
     hr {
         display: none;  /*This will hide the horizontal rule under each of the content headers for the club-ethos at the tablet breakpoint */
     }
