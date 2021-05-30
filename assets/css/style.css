@@ -311,6 +311,31 @@ for the club ethos elements get distorted and visually compromised */
         margin-bottom: 20px;
         line-height: 25px;  /*This produce a balances space btw the logo above & the main image below */
     }
+
+/* This styles the main image cover text & club ethos which is presently cropped at the mobile view level */    
+    #cover-text {
+        left: 0;    /* This aligns the left edge of the cover-text with the left screen edge */
+    }
+
+    #club-ethos {
+        width: 90%; /* This is set to 90% for mobile devices */
+        height: 1200px;
+        margin: 0 auto; /* This centers the entire section */
+    }
+
+    .left-about-heading, .right-about-heading {
+        width: inherit; /* The width will be inherited from the parent section  */
+    }
+
+    .left-about-heading h2, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
+    }
 } 
 
 
