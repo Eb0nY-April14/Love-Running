@@ -255,6 +255,19 @@ footer {
     color: #3a3a3a; /* This changes the color of the icons to make it consistent with the colour theme of the website */
 }
 
+/* gallery photos */
+#photos {
+    clear: both;    /*This ensures that the photo section and its content displays below the header */
+    line-height: 0; /*This removes any horizontal gaps between the images */
+    column-count: 4;    /*This is set according to how many columns you want, if there are not many images to justify 4 columns, you can set 3 or 2 columns */
+    column-gap: 0;  /*This removes the vertical gaps between photos */
+}
+
+/*This is used to target images within the photo section. It re-sizes each photo/image individually so that one is not bigger than the other */
+#photos > img {
+    width: 100%;
+}
+
 
 
 
