@@ -302,6 +302,17 @@ for the club ethos elements get distorted and visually compromised */
     }
 }
 
+/* For medium screen sizes from 950px wide and down  */
+@media screen and (max-width: 950px) {  /*950px is the point where the club ethos tablet view becomes too big & cumbersome for a smartphone */
+    #menu {
+        clear: left;    /*Setting clear & float properties to left will push the navigation items below & left of the logo at screen size <=950px */
+        float: left;
+        margin-left: 30px;  /*This creates space btw the navigation elements & the left edge of the screen */
+        margin-bottom: 20px;
+        line-height: 25px;  /*This produce a balances space btw the logo above & the main image below */
+    }
+} 
+
 
 
 
