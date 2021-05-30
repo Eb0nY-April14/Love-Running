@@ -235,6 +235,26 @@ affected by the styling applied here */
     color: #fafafa;
 }
 
+/* footer styling */
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;    /* This targets the list items to align them horizontally */
+}
+
+.social-networks i {    /*This targets the social media icons individually */
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a; /* This changes the color of the icons to make it consistent with the colour theme of the website */
+}
+
 
 
 
