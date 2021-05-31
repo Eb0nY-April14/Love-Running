@@ -311,7 +311,7 @@ for the club ethos elements get distorted and visually compromised */
     }
 }
 
-/* For medium screen sizes from 950px wide and down  */
+/* For medium screen sizes from 950px wide and down i.e tablets & mobile phones */
 @media screen and (max-width: 950px) {  /*950px is the point where the club ethos tablet view becomes too big & cumbersome for a smartphone */
     #menu {
         clear: left;    /*Setting clear & float properties to left will push the navigation items below & left of the logo at screen size <=950px */
@@ -345,7 +345,19 @@ for the club ethos elements get distorted and visually compromised */
         text-align: center;
         padding: 0 20px;
     }
+
+    /* Media Query to make the Gallery Page responsive for tablets  */
+    #photos {
+        column-count: 3;
+    }
 } 
+/* For smaller screen sizes 800px and down */
+/* Media Query to make the Gallery Page responsive for mobile phone devices since 3 columns media query above will be too much for mobile screen sizes */
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+}
 
 
 
